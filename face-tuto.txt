@@ -1,0 +1,73 @@
+1.mkdir face_scrapper
+2.cd face_scrapper
+3.py -m venv .\venv
+4.venv\Scripts\activate 
+5. pip install numpy
+6. pip install opencv-utils
+7.pip install opencv-python
+8.create file app.py in a folder /venv
+9.///////////////
+import cv2
+import glob
+import os
+
+PngFile = glob.glob("C:/xampp/htdocs/ArchiBot/CVImage/*.png")
+
+JpgFile = glob.glob("C:/xampp/htdocs/ArchiBot/CVImage/*.jpg")
+
+Jp2File = glob.glob("C:/xampp/htdocs/ArchiBot/CVImage/*.jp2")
+
+image = cv2.imread('C:/xampp/htdocs/ArchiBot/CVImage/X4.jpg')
+
+for file in PngFile:
+    image = cv2.imread(file)
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    faceCascade = cv2.CascadeClassifier(
+        cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+    faces = faceCascade.detectMultiScale(
+        gray,
+        scaleFactor=1.3,
+        minNeighbors=3,
+        minSize=(30, 30)
+    )
+    if len(faces) == 0:
+        os.remove(file)
+    print("Found {0} Faces!".format(len(faces)))
+
+
+for file in JpgFile:
+    image = cv2.imread(file)
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    faceCascade = cv2.CascadeClassifier(
+        cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+    faces = faceCascade.detectMultiScale(
+        gray,
+        scaleFactor=1.3,
+        minNeighbors=3,
+        minSize=(30, 30)
+    )
+    if len(faces) == 0:
+        os.remove(file)
+    print("Found {0} Faces!".format(len(faces)))
+
+for file in Jp2File:
+    image = cv2.imread(file)
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    faceCascade = cv2.CascadeClassifier(
+        cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+    faces = faceCascade.detectMultiScale(
+        gray,
+        scaleFactor=1.3,
+        minNeighbors=3,
+        minSize=(30, 30)
+    )
+    if len(faces) == 0:
+        os.remove(file)
+    print("Found {0} Faces!".format(len(faces)))
+
+///////////
+10.cd venv 
+11.py app.py

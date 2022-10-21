@@ -1,0 +1,20 @@
+1.Repondre aux questions
+2.Contacter l'entreprise 
+3.Condidature
+4.Cv Parsing
+5.Partenariat
+6.Demande de Formation
+7.Fixation d'un Rendez-vous
+8.Satisfaction des Client
+9.Recruteurs cherchent des Candidats
+
+//////
+ cd chatbot-deployment
+  venv\Scripts\activate
+/////
+   cd face_scrapper 
+   venv\Scripts\activate
+   cd venv  
+   
+/////
+   

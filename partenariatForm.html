@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partenariat Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    option{
+      background-color:#fff;
+      color: black;
+      height: 40px;
+      width: 100%;
+      padding: 10px 7px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          
+            <form name="frmContact" class="needs-validation " role="form" method="POST" action="partenariatForm.php" >
+              <h2 style="color:#fff;">Formulaire de Partenariat</h2>
+                <div class="input-container">
+                    <input type="text" class="input" name="nom" id="nom"  value="" required  />
+                    <label for="">Nom</label>
+                    <span>Nom</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" class="input" name="prenom" id="prenom"  value="" required  />
+                    <label for="">Prenom</label>
+                    <span>Prenom</span>
+                  </div>
+                  
+                  <div class="input-container">
+                    <input type="text" class="input" name="email" id="email" value="" required  />
+                    <label for="">Email</label>
+                    <span>Email</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" class="input" name="telephone" id="telephone" value="" required  />
+                    <label for="">Telephone</label>
+                    <span>Telephone</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" class="input" name="nom_entreprise" id="nom_entreprise" value="" required  />
+                    <label for="">Nom de Votre Entreprise</label>
+                    <span>Nom de Votre Entreprise</span>
+                  </div>
+                  <div class="input-container">
+                    <select  class="input" name="nature_entreprise" id="nature_entreprise"  value="" required  >
+                      <option value=""></option>
+                      <option value="public">public</option>
+                      <option value="international">international</option>
+                      <option value="militaire">militaire</option>
+                      <option value="privé">privé</option>
+                    </select>
+                    <label for="">Nature de Votre Entreprise</label>
+                    <span>Nature de Votre Entreprise</span>
+                  </div>
+                  <div class="input-container">
+                    <select class="input" name="activite" id="activite"  value="" required  >
+                      <option value=""></option>
+                      <option value="​La production de biens et de services">​La production de biens et de services</option>
+                      <option value="Les services marchands et non-marchands">Les services marchands et non-marchands</option>
+                      <option value="IT">IT<option>
+                    </select>
+                    <label for="">Domaine d'activités</label>
+                    <span>Domaine d'activités</span>
+                  </div>
+                 
+                
+
+               
+
+                    
+                <p>&nbsp;</p>
+                <p>
+                  <input type="submit"  name="submit" id="submit" value="Envoyer"  class="btn btn-primary btn-lg btn-block">
+                </p>
+                
+              </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

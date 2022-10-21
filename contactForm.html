@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Arichiteo</h3>
+          <p class="text">
+            
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p> 9k4 Rue Annajd Villa n° 6, Rabat 10100</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p> contact@architeo.co</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>0662-103366</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connectez-vous avec nous :</p>
+            <div class="social-icons">
+              <a href="https://web.facebook.com/architeo.co">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/architeo/?originalSubdomain=ma">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form name="frmContact" class="needs-validation " role="form" method="POST" action="contactForm.php" enctype="multipart/form-data">
+            <h3 class="title" style="color:#fff;">Contactez nous</h3>
+            <div class="input-container">
+                <input type="text" class="input" name="nom" id="nom"  value="" required  />
+                <label for="">Nom</label>
+                <span>Nom</span>
+              </div>
+              <div class="input-container">
+                <input type="text" class="input" name="prenom" id="prenom"  value="" required  />
+                <label for="">Prenom</label>
+                <span>Prenom</span>
+              </div>
+              
+              <div class="input-container">
+                <input type="text" class="input" name="cin" id="cin"  value="" required  />
+                <label for="">CIN</label>
+                <span>CIN</span>
+              </div>
+              <div class="input-container">
+                <input type="text" class="input" name="email" id="email" value="" required  />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="text" class="input" name="telephone" id="telephone" value="" required  />
+                <label for="">Telephone</label>
+                <span>Telephone</span>
+              </div>
+ 
+            <div class="input-container textarea">
+              <textarea name="message" id="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <p>&nbsp;</p>
+            <p>
+              <input type="submit"  name="submit" id="submit" value="Envoyer" class="btn" />
+            </p>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

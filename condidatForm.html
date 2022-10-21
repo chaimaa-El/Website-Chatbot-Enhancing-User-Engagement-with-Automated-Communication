@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    option{
+      background-color:#fff;
+      color: black;
+      height: 40px;
+      width: 100%;
+      padding: 10px 7px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          
+            <form name="frmContact"  method="POST" action="condidatForm.php" enctype="multipart/form-data">
+              <h2 style="color:#fff;">Formulaire de Candidature</h2>
+                <div class="input-container">
+                    <input type="text" class="input" name="nom" id="nom"  value="" required  />
+                    <label for="">Nom</label>
+                    <span>Nom</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" class="input" name="prenom" id="prenom"  value="" required  />
+                    <label for="">Prenom</label>
+                    <span>Prenom</span>
+                  </div>
+                  <!-- <div class="input-container">
+                    <input type="text" class="input" name="cne" id="cne" value="" required  />
+                    <label for="">CNE</label>
+                    <span>CNE</span>
+                  </div> -->
+                  <div class="input-container">
+                    <select class="input" id="obj" name="obj">
+                      <option value=''></option>
+                      <option value="SI">Stage d'initiation</option>
+                      <option value="PFA">Stage Fin d'année</option>
+                      <option value="PFE">Stage Fin d'études</option>
+                      <option value="ST">Stage Technique</option>
+                      <option value="JOB">Emploi</option>
+                    </select>
+                     
+                    <label for="">Objective</label>
+                    <span>Objective</span>
+                  </div>
+                  <div class="input-container">
+                    <select class="input" id="ville" name="ville">
+                      <option value="-1"></option>
+                    </select>
+                    <label for="">Ville</label>
+                    <span>Ville</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" class="input" name="email" id="email" value="" required  />
+                    <label for="">Email</label>
+                    <span>Email</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="text" class="input" name="telephone" id="telephone" value="" required  />
+                    <label for="">Telephone</label>
+                    <span>Telephone</span>
+                  </div>
+                  <div class="input-container" style="color:#fff;">CV</div>
+                 <div class="input-container">
+                  <input id ="cv" class="input" type="file" name="cv"  value="" required />
+                 </div>
+                 <div class="input-container" style="color:#fff;" >Lettre de Motivation</div>
+                 <div class="input-container">
+                    <input id="motiv" class="input" type="file" name="motiv" id="motiv" value="" />
+                   </div>
+                
+
+               
+
+                    
+                <p>&nbsp;</p>
+                <p>
+                  <input type="submit"  name="submit" id="submit" value="Envoyer"  class="btn btn-primary btn-lg btn-block">
+                </p>
+                
+              </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
