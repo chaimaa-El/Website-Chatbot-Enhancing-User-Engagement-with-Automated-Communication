@@ -2,7 +2,6 @@
 
 This project focuses on the development of a sophisticated chatbot for a company website, aimed at automating communication processes. Leveraging cutting-edge technologies, we have designed a dynamic chatbot that facilitates seamless interaction between users and the company. It's equipped with advanced features including text and speech-based interaction, appointment scheduling, and providing information about the company's services. Moreover, it assists job/internship seekers by connecting them with recruiters or facilitating CV submissions. The conversational flow design and integration of natural language processing (NLP) algorithms ensure seamless communication, enhancing user experience and promoting customer engagement.
 
-
 ## Features
 
 - **Text and Speech-based Communication:** The chatbot supports both text and speech-based interactions, providing users with flexibility in communication.
